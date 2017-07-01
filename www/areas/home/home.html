@@ -1,0 +1,47 @@
+<ion-view id="home" view-title="主页" cache-view="false" >
+<div class="bar bar-header item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="Search">
+    </label>
+    <button class="button button-outline button-positive" style="color:#fff;">
+      搜索
+    </button>
+</div>
+ <ion-content id="home-content">
+ <ion-refresher
+ pulling-text="获取最新数据..."
+ refreshing-text="刷新完毕"
+ on-refresh="func_refreshGoodsList()">
+</ion-refresher>
+    <div class="col" ng-repeat="item in obj_goodsListData">
+      <div class="list card">
+          <div class="item item-avatar">
+            <img ng-src="{{item.src}}">
+            <h2>{{item.name}}</h2>
+            <p>{{item.time}}</p>
+          </div>
+          <a href="">
+            <div class="item item-body">
+              <img class="full-image" ng-src="{{item.image}}">
+              <p>
+                {{item.discribe}}
+              </p>
+              <p>
+                <a href="#" class="subdued">{{item.like}} 赞</a>
+                <a href="#" class="subdued">{{item.comments}} 评论</a>
+              </p>
+            </div>
+          </a>
+      </div>
+    </div>
+  <div class="back_top"></div>
+
+<div ng-hide="pms_isMoreItemsAvailable" style="text-align: center">
+  <span>全部数据已经加载完成！</span>
+</div>
+<ion-infinite-scroll ng-if="pms_isMoreItemsAvailable" on-infinite="func_loadMoreGoodsList()" distance="1%">
+</ion-infinite-scroll>
+  </ion-content> <!--  -->
+</ion-view>
+

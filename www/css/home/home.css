@@ -1,0 +1,152 @@
+
+#home ion-content{
+  overflow:scroll;
+
+}
+#home .scroll-refresher {
+	height: 52px;
+}
+#home .item p {
+	font-size: 13px;
+}
+/*回到头部滚动条*/
+#home .back_top{
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  background: url("../../img/home/scroll-to-top-icon.png") no-repeat;
+  background-size: 35px 35px;
+  opacity: 0;
+  transition: all .3s ease 0s;
+  -webkit-transition: all .3s ease 0s;
+  z-index: 100;
+}
+#home .bar-header {
+  background-color: #5C81C2;
+}
+#home {
+  background-color: #f5f5f5;
+}
+
+#home a{
+	text-decoration: none;
+}
+#home .item-input-inset {
+	position: fixed;
+}
+#home .col {
+	padding-top: 38px;
+}
+#home .bar.item-input-inset .item-input-wrapper input {
+	height: 22px;
+}
+
+#home .item-input-wrapper {
+	border-radius: 20px;
+}
+#home .bar .button, .bar button {
+	line-height: 23px;
+	min-height: 22px;
+	color: #5C81C2;
+}
+#home .button.button-positive.button-outline {
+	border-color: #c0c0c0;
+}
+#home .button.button-stable {
+	position: fixed;
+	bottom:58px;
+	right: 10px;
+	opacity: 0;
+	background-color: #52b0b0;
+}
+
+
+
+
+
+/*222222222222222222222222222222222222*/
+
+
+#home .scroll {
+	margin-top: 58px;
+}
+#home .h1{
+	color: #fff;
+}
+#home .row {
+	height: auto;
+	position: relative;
+	top: -1px;
+	padding: 65px 10px 10px 10px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+#home .col {
+	padding: 0 5px;
+}
+#home .col1 {
+	background: #f00;
+	height: 150px;
+}
+#home .col2 {
+	background: #f00;
+	height: 73px;
+}
+#home .col3 {
+	margin-top: 5px;
+	background: #f00;
+	height: 72px;
+}
+#home .col4 {
+	background: #f00;
+	height: 73px;
+}
+#home .col5 {
+	margin-top: 5px;
+	background: #f00;
+	height: 72px;
+}
+
+#home .tit {
+	position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	margin-left: -30px;
+	top: 10px;
+	color: #f00;
+	font-size: 16px;
+}
+#home .text {
+	position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	margin-left: -100px;
+	top: 36px;
+	font-size: 13px;
+}
+#home .cols {
+	padding-left: 0;
+}
+
+#home #headerSlider1 {
+	height: 40px;
+	margin-top: 4px;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#home .swiper-slide {
+	height: 40px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+#home .ion-ios-flame {
+	color: #f00;
+}
+#home .card {
+	padding: 10px;
+	margin: 10px 10px;
+}
