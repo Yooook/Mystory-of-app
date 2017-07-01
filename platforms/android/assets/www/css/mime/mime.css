@@ -1,0 +1,78 @@
+#mime .bar {
+	border-bottom: none;
+	background-color: transparent;
+	background-image:none;
+}
+#mime .bar-header {
+	top: 20px;
+	border-top-width: 0;
+	border-bottom-width: 1px;
+	padding-left: 13px;
+}
+#mime .bar > .button + .button:last-child {
+	right: 15px;
+}
+#mime .button {
+	color: #fff;
+	border-color: transparent;
+	background-color: transparent;
+}
+#mime .top-content {
+	height:360px;
+	background-color: #5c81c2;
+}
+#mime .pic{
+	height: 120px;
+	width: 120px;
+	margin: 80px auto 10px auto;
+	background: #fff;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1px solid #eafbff;
+}
+#mime .pic img{
+	height: 120px;
+	width: 120px;
+}
+#mime .name {
+	margin-top: 192px;
+}
+#mime .name h2{
+	color: #fff;
+	font-size: 22px;
+}
+#mime .bar-subheader {
+	margin-top: 170px;
+	color: #fff;
+}
+#mime .bar-subheader h2{
+	color: #fff;
+}
+#mime .top {
+	margin-top: 50px;
+}
+
+#mime p {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+#mime .item-icon-left .icon, .item-icon-right .icon {
+	font-size: 26px;
+	color: #5C81C2;
+}
+
+#mime .ion-ios-arrow-forward {
+	font-size: 20px;
+	color: #c2c2c2 !important;
+}
+
+#mime .item {
+	font-size: 14px;
+}
+
+#mime .item .badge {
+	top: 14px;
+	right: 38px;
+}

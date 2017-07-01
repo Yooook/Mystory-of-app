@@ -1,0 +1,49 @@
+ <ion-view id="flame" view-title="热度榜" cache-view="false">
+ <div class="bar bar-header">
+ 	<!-- <button class="button button-icon icon ion-navicon"></button> -->
+ 	<div class="h1 title">最热Experiences</div>
+ 	<!-- <button class="button button-clear button-positive">Edit</button> -->
+ </div>
+ <ion-content>
+ <ion-refresher
+ pulling-text="获取最新数据..."
+ refreshing-text="刷新完毕"
+ on-refresh="func_refreshGoodsList()">
+</ion-refresher>
+<div class="row">
+	<div class="col col1"><span class="tip">Finch</span><img style="width: 100px;"  ng-src="./img/mime/px1.png"></div>
+	<div class="col">
+		<div class="col col2"><span class="tip1">阿雷丸号</span><img style="width: 100px;"  ng-src="./img/mime/px2.png"></div>
+		<div class="col col3"><span class="tip1">稚始稚終つ</span><img style="width: 100px;"  ng-src="./img/mime/px3.png"></div>
+	</div>
+	<div class="col cols">
+		<div class="col col4"><span class="tip1">时光蹉跎</span><img style="width: 100px;"  ng-src="./img/mime/px4.png"></div>
+		<div class="col col5"><span class="tip1">活得很好</span><img style="width: 100px;"  ng-src="./img/mime/avater8.jpg"></div>
+	</div>
+</div>
+<div class="tit"><span class="ion-ios-flame"></span> 人气写手 </div>
+<div class="text">最受欢迎的人气写手展示......</div>
+<div class="swiper-container"  id="headerSlider1">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><span class="ion-ios-flame"></span> 稚始稚終つ  发布了一篇文章......</div>
+		<div class="swiper-slide"><span class="ion-ios-flame"></span> 时光蹉跎  发布了一篇经历.....</div>
+		<div class="swiper-slide"><span class="ion-ios-flame"></span> Finch  发布了一篇感悟.....</div>
+	</div>
+</div>
+<div ng-repeat="item in obj_goodsListData">
+	<div class="list card">
+		<div class="item item-divider">
+			标题：{{item.title}}？
+		</div>
+		<img class="full-image" ng-src="{{item.src}}">
+		<div class="author">写手：{{item.author}}  / 发起时间：{{item.time}}</div>
+	</div>
+</div>
+
+<div ng-hide="pms_isMoreItemsAvailable" style="text-align: center">
+	<span>全部数据已经加载完成！</span>
+</div>
+<ion-infinite-scroll ng-if="pms_isMoreItemsAvailable" on-infinite="func_loadMoreGoodsList()" distance="1%">
+</ion-infinite-scroll>
+</ion-content>
+</ion-view>

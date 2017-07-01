@@ -1,0 +1,31 @@
+#topic {
+	background-color: #5C81C2;
+}
+#topic #headerSlider {
+	padding-top: 44px;
+}
+#topic .spc {
+	margin-top:5px;
+}
+#topic .bar-header {
+	background-color: #5C81C2;
+}
+#topic .h1 {
+	color: #fff;
+}
+#topic .bar {
+	border-bottom: 1px solid #32589B;
+}
+#topic .title {
+	font-size: 16px;
+}
+#topic .image-loader {
+	position:absolute;
+    left: 11%;
+    top: 30%;
+}
+
+#topic .item p {
+	text-overflow: clip;
+	white-space: normal;
+}
